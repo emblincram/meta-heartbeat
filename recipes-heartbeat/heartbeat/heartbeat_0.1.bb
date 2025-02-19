@@ -24,7 +24,7 @@ addtask display_banner before do_build
 SRC_URI = "git:///mnt/ssd/work/heartbeat;branch=main;protocol=file"
 SRC_URI += "file://heartbeat.service"
 
-SRCREV = "9fbcdd49b39674950f05404ad8f7b7818616a481"
+SRCREV = "13a5e66616e2a39ab80a54f9a44073abca9f6e9c"
 ## scheint buggy zu sein, später: "SRCREV = ${AUTOREV}" oder "SRCREV = "HEAD""
 PV = "1.0"
 S = "${WORKDIR}/git"
