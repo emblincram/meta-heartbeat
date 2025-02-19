@@ -1,0 +1,15 @@
+[Unit]
+Description=Heartbeat
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/heartbeat
+Restart=always
+RestartSec=5
+User=root
+WorkingDirectory=/usr/bin/
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
